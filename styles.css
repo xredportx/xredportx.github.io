@@ -1,0 +1,161 @@
+:root{
+    --MAX-WIDTH:1170px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Elegant font */
+    background-color: #EFEDE8; /* Soft neutral color for background */
+}
+
+
+/* Updated styles.css */
+html {
+    height: 100%; /* Ensure the html element takes full height */
+}
+
+header {
+    background-color: rgba(247, 231, 206, 0.95); /* Soft champagne background */
+    text-align: center;
+    padding: 10px 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Elegant font */
+    background-color: #EFEDE8; /* Soft neutral color that blends well */
+}
+
+main {
+    flex: 1; /* Takes up all available space */
+    background-color: #e2c78c; /* Same as body for a consistent look */
+}
+
+
+nav {
+    background-color: transparent; /* Transparent nav for a clean look */
+    color: #046307; /* Dark green text for elegance */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--MAX-WIDTH); 
+    justify-content: space-evenly;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #046307; /* Consistent with the nav text color */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: url('/photos/20231216_220313.jpg'); /* Update image path if necessary */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--MAX-WIDTH);
+    color: #FFFFFF; /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    margin: 0 auto; 
+}
+
+.hero h1 {
+    font-size: 36px; /* Larger font size for impact */
+    margin: 0;
+    padding: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #A67B5B; /* Darker tan for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D2B48C; /* Lighter tan for hover effect */
+}
+
+
+footer {
+    background-color: rgba(220, 199, 161, 0.9); /* Matching footer with header */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+.annotation {
+    background-color: rgba(255, 0, 0, 0.05); /* Very light tint of red for the annotations */
+    padding: 1px 1px; /* Padding around the annotation */
+    font-style: italic; /* Italic font style */
+}
+
+
+.our_story_start {
+    text-align: center; /* Centers the container */
+    display: block; /* Change from flex to block for natural flow */
+    max-width: 800px; /* Optional: adjust based on layout needs */
+    margin: auto; /* Center the block horizontally */
+}
+
+.our_story_start img {
+    float: left; /* Keeps the image to the left */
+    width: 30%; /* Adjust based on your preference */
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+.our_story_start p {
+    text-align: left; /* Aligns the text to the left */
+    max-width: 100%; /* Allows the text to take the remaining space */
+}
+
+@media (max-width: 768px) {
+    .our_story_start img {
+        float: none;
+        width: 100%;
+        margin: 0 auto 10px; /* Center image on smaller screens */
+    }
+
+    .our_story_start p {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1240px) {
+    .starting_banner, nav ul {
+        max-width: calc(100% - 40px); /* Adjust max-width to accommodate padding */
+    }
+}
